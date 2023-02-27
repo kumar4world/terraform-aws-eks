@@ -1,4 +1,5 @@
 # EKS Cluster
+
 resource "aws_eks_cluster" "this" {
   name     = "${var.project}-cluster"
   role_arn = aws_iam_role.cluster.arn
